@@ -12,7 +12,7 @@ def home():
         image = request.files['image']
         filename = download_svg_from_image(image)
         if filename is not None and filename is not False:
-            output_folder = os.path.join(app.root_path, "Logos")
+            output_folder = os.path.join(app.root_path)
             sp.call(['blender', '--background', '--python', 'importSVG.py', filename + '.svg', app.root_path, output_folder])
             return send_file(os.path.join(output_folder, filename + '.fbx'), as_attachment=True)
     return render_template('index.html')
