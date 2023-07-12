@@ -32,3 +32,8 @@ Instructions to run:
 
 Notes:
 1) Differnet versions of python will sometimes require you to type "py" or "python3" and "pip3" instead of python/pip respectively.
+
+Using the app:
+1) Open up the website after running the app and pick an image file on your computer to create a logo.
+2) It will take several seconds to process everything.
+3) Once done you will automatically download an .fbx file which will be the 3d logo you can put into a scene.
